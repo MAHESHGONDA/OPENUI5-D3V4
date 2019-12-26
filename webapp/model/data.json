@@ -1,0 +1,38 @@
+{
+	"name": "Top Level",
+	"street": "RUS , SA",
+	"houseNumber": "1000",
+	"zipCode": "98510054",
+	"city": "Par",
+	"country": "RUS",
+	"children": [{
+		"name": "Level 2: A",
+		"street": "dallas , SA",
+		"houseNumber": "10",
+		"zipCode": "10054",
+		"city": "Max",
+		"country": "US",
+		"children": [{
+			"name": "Son of A",
+			"street": "maxico , SA",
+			"houseNumber": "190",
+			"zipCode": "10054",
+			"city": "North Sany",
+			"country": "UK"
+		}, {
+			"name": "Daughter of A",
+			"street": "Korea , DA",
+			"houseNumber": "5190",
+			"zipCode": "9810054",
+			"city": "North K",
+			"country": "KO"
+		}]
+	}, {
+		"name": "Level 2: B",
+		"street": "Japan , JA",
+		"houseNumber": "685190",
+		"zipCode": "9810054",
+		"city": "North Ja",
+		"country": "JO"
+	}]
+}

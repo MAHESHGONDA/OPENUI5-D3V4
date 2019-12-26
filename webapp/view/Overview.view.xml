@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.d3.demo.controller.Overview" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:control="com.d3.demo.control"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Page>
+		<l:Splitter >
+			<Panel height="100%">
+				<control:TreeView data="{/}" nodeClick="onNodeClickTrigger"></control:TreeView>
+			</Panel>
+			<l:Grid defaultSpan="L12 M12 S12" width="auto">
+			<l:content>
+				<f:SimpleForm id="SimpleFormDisplay354" minWidth="1024" maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" title="Address"
+					labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1" columnsM="1">
+					<f:content>
+						<Label text="Name"/>
+						<Text text="{uimodel>/name}"/>
+						<Label text="Street/No."/>
+						<Text text="{uimodel>/street} {uimodel>/houseNumber}"/>
+						<Label text="ZIP Code/City"/>
+						<Text text="{uimodel>/zipCode} {uimodel>/city}"/>
+						<Label text="Country"/>
+						<Text text="{uimodel>/country}"/>
+					</f:content>
+				</f:SimpleForm>
+			</l:content>
+		</l:Grid>
+		</l:Splitter>
+		
+	</Page>
+</mvc:View>
